@@ -3,6 +3,9 @@ server:
 spring:
   profiles:
     active: dev
+#    include:
+#      - common
+#      - local
 ---
 #spring:
 #  config:

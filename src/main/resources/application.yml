@@ -1,0 +1,19 @@
+server:
+  port: 9000
+spring:
+  profiles:
+    active: dev
+---
+#spring:
+#  config:
+#    activate:
+#      on-profile: "dev"
+#server:
+#  port: 9001
+---
+#spring:
+#  config:
+#    activate:
+#      on-profile: "prod"
+#server:
+#  port: 9002

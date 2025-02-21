@@ -4,20 +4,19 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Positive;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
-@Component
+
 @ConfigurationProperties(prefix = "myapp")
 @Validated
 public class AppConfig {
-    private String name;
+    private  String name;
 
     @Positive(message = "version must be positive")
-    private int version;
+    private  int version;
 
     @Valid
-    private Ftp ftp;
+    private  Ftp ftp;
 
     public String getName() {
         return name;
@@ -42,6 +41,12 @@ public class AppConfig {
     public void setFtp(Ftp ftp) {
         this.ftp = ftp;
     }
+
+/*    public AppConfig(String name, int version, Ftp ftp){
+        this.name = name;
+        this.version = version;
+        this.ftp = ftp;
+    }*/
 
 /*    ------------------FTP-------------*/
     public static class Ftp{
@@ -73,5 +78,11 @@ public class AppConfig {
         public void setPassword(String password) {
             this.password = password;
         }
+
+        /*    public Ftp(String host, String username, String password) {
+        this.host = host;
+        this.username = username;
+        this.password = password;
+    }*/
     }
 }

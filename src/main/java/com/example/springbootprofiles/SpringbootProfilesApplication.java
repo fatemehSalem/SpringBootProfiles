@@ -37,6 +37,7 @@ public class SpringbootProfilesApplication {
 /*            System.out.println("Loaded Bean: " + developmentConfiguration);
             System.out.println("Loaded Bean: " + productionConfiguration);*/
 
+          //  appConfig.setVersion(123);
             System.out.println("App Name: " + appConfig.getName());
             System.out.println("App Version: " + appConfig.getVersion());
             System.out.println("FTP Host: " + appConfig.getFtp().getHost());

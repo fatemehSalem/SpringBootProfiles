@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 @Profile("prod")
 public class ProductionConfiguration {
-
     @Bean
     public String productionBean() {
         return "This is the production bean.";

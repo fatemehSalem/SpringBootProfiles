@@ -16,6 +16,11 @@ public class SpringbootProfilesApplication {
     @Autowired
     private  AppConfig appConfig;
 
+/*    @Autowired
+    private DevelopmentConfiguration developmentConfiguration;
+    @Autowired
+    private  ProductionConfiguration productionConfiguration;*/
+
     public static void main(String[] args) {
         SpringApplication.run(SpringbootProfilesApplication.class, args);
     }
@@ -28,6 +33,9 @@ public class SpringbootProfilesApplication {
             for (String profile : activeProfiles) {
                 System.out.println(profile);
             }
+
+/*            System.out.println("Loaded Bean: " + developmentConfiguration);
+            System.out.println("Loaded Bean: " + productionConfiguration);*/
 
             System.out.println("App Name: " + appConfig.getName());
             System.out.println("App Version: " + appConfig.getVersion());

@@ -11,7 +11,7 @@ import org.springframework.validation.annotation.Validated;
 public class AppConfig {
     private  String name;
 
-    @Positive(message = "version must be positive")
+//    @Positive
     private  int version;
 
     @Valid

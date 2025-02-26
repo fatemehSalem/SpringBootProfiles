@@ -16,8 +16,9 @@ public class SpringbootProfilesApplication {
     @Autowired
     private  AppConfig appConfig;
 
-/*    @Autowired
+ /*   @Autowired
     private DevelopmentConfiguration developmentConfiguration;
+
     @Autowired
     private  ProductionConfiguration productionConfiguration;*/
 
@@ -34,10 +35,10 @@ public class SpringbootProfilesApplication {
                 System.out.println(profile);
             }
 
-/*            System.out.println("Loaded Bean: " + developmentConfiguration);
-            System.out.println("Loaded Bean: " + productionConfiguration);*/
-
-          //  appConfig.setVersion(123);
+       /*     System.out.println("Loaded Bean: " + developmentConfiguration);
+            System.out.println("Loaded Bean: " + productionConfiguration);
+*/
+           // appConfig.setVersion(123);
             System.out.println("App Name: " + appConfig.getName());
             System.out.println("App Version: " + appConfig.getVersion());
             System.out.println("FTP Host: " + appConfig.getFtp().getHost());
